@@ -1,0 +1,56 @@
+.slider {
+    padding-top: 20px;
+    padding-bottom: 95px;
+    .swiper {
+        padding-top: 69px;
+        width: 100%;
+        max-width: 1800px;
+        &-slide {
+            h6 {
+                @include font(13px, 400, left);
+                color: $text-gray;
+                padding-top: 20px;
+
+                @include mobile() {
+                    @include font(12px, 400);
+                }
+            }
+            p {
+                @include font(14px, 400, left);
+                color: $text-gray;
+
+                @include mobile() {
+                    @include font(11px, 400);
+                }
+              }
+            }
+            img {
+                width: 420px;
+                height: 530px;
+                
+                @include mobile() {
+                    width: 150px;
+                    height: 200px;
+                }
+            }
+
+            @include mobile() {
+                text-align: center;
+            }
+        &-pagination{
+            &-bullet {
+            cursor: pointer;
+            border-radius: 1%;
+            transition: 0.2s;
+
+            @include mobile() {
+                height: 7px;
+                width: 7px;
+            }
+            &.swiper-pagination-bullet-active {
+                background: $bg-black;
+                }
+            }
+        }
+    }
+}

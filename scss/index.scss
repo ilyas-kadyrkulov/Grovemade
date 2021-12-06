@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;700&family=Roboto:wght@100;300;400&display=swap');
+
+@import './helpers/variables';
+@import './helpers/mixins';
+    
+@import './components/header';
+@import './sections/hero';
+@import './sections/design';
+@import './sections/workspace';
+@import './sections/featured';
+@import './sections/slider';
+@import './sections/villain';
+@import './sections/photos';
+@import './sections/inspiration';
+@import './components/footer';
+
+
+body {
+    font-family: 'Roboto', sans-serif; 
+    margin: 0;
+}
+h1,h4,h6,p,a,ul {
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+ul {
+    list-style-type: none;
+}

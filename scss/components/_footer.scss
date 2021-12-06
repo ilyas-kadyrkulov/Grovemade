@@ -1,0 +1,109 @@
+.footer {
+    @include flex(flex-start, flex-start, row);
+    padding: 80px 13px;
+    background: $bg-white-gray;
+    position: relative;
+    max-width: 1920px;
+    &-nav {
+        padding-right: 13px;
+        padding-left: 50px;
+        &__item {
+          margin-top: 8px;
+        }
+        &__link {
+            @include font(22px, 400);
+            @include mobile() {
+                font-size: 13px;
+            }
+        }
+        @include mobile() {
+            padding-left: 25px;
+        }
+    }
+    &-sign {
+        position: relative;
+        margin-top: 8px;
+        p {
+            @include font(14px, 400, 16px);
+            @include mobile() {
+                width: 275px;
+                padding: 15px 0 60px;
+                font-size: 10px;
+            }
+            width: 348px;
+            color: $text-gray;
+            padding: 20px 0 90px;
+        }
+        hr {
+            position: absolute;
+            left: 0;
+            width: 300px;
+
+            @include mobile() {
+                width: 250px;
+                border: 1px solid black;
+            }
+        }
+    }
+    &-last {
+        position: absolute;
+        bottom: 20px;
+        right: 37px;
+        width: 1365px;
+        &__terms {
+            @include flex(flex-end, flex-start, row);
+            span {
+                @include font(13px, 400);
+                @include mobile() {
+                    font-size: 8px;
+                }
+                color: $text-dark-gray;
+            }
+            a {
+                @include font(13px, 400);
+                @include mobile() {
+                    font-size: 8px;
+                }
+                color: $text-dark-gray;
+                padding: 0 18px;
+            }
+            p {
+                @include font(13px, 400);
+                @include mobile() {
+                    font-size: 8px;
+                }
+                color: $text-black;
+                
+            }
+        }
+
+        @include mobile() {
+            bottom: 6px;
+            right: 10px;
+        }
+    }
+    #myBtn {
+        position: absolute;
+        top: 0;
+        right: 50px;
+        z-index: 99;
+        width: 80px;
+        height: 80px;
+        background-color: $bg-black;
+        color: white;
+        cursor: pointer;
+        font-size: 15px;
+        text-transform: uppercase;
+        border: none;
+
+        @include mobile() {
+            width: 45px;
+            height: 45px;
+            font-size: 11px;
+        }
+    }
+
+    @include mobile() {
+        padding: 40px 13px;
+    }
+}

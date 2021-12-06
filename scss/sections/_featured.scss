@@ -1,0 +1,40 @@
+.featured {
+    @include flex(center, center, column);
+    &__content{
+        @include flex(center, center, column);
+        h1 {
+            @include font(33px, 400, 36px);
+            @include mobile() {
+                font-size: 25px;
+                padding: 25px 0 11px;
+            }
+            color: $text-black;
+            padding: 30px 0 16px;
+        }
+        p {
+            @include font(15px, 400, center, 18px);
+            @include mobile() {
+                font-size: 11px;
+            }
+            max-width: 777px;
+            color: $text-gray;
+            padding-bottom: 23px;
+        }
+    }
+    @include mobile() {
+        img {
+            max-width: 335px;
+        }
+    }
+}
+
+.last {
+    h1 {
+        padding-top: 120px;
+    }
+    a {
+        @include font(13px, 400);
+        padding: 44px 0 120px;
+        color: $text-black;
+    }
+}

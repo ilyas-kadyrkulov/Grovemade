@@ -1,0 +1,35 @@
+.design {
+    @include flex(center, center);
+    padding: 80px 0;
+    &__content{
+        @include flex(center, center, column);
+        h1 {
+            @include font(43px, 400, center);
+            @include mobile() {
+                font-size: 25px;
+            }
+            width: 300px;
+            color: $text-black;
+            padding-bottom: 23px;
+        }
+        p {
+            @include font(14px, 400, center);
+            @include mobile() {
+                font-size: 12px;
+            }
+            width: 480px;
+            color: $text-gray;
+            padding-bottom: 28px; 
+        }
+        a {
+            @include font(13px, 400, center);
+            @include mobile() {
+                font-size: 10px;
+            }
+            width: 95px;
+            color: $text-black;
+        }
+    }
+
+    
+}
